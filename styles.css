@@ -59,3 +59,18 @@ footer {
     margin-bottom: 1rem;
   }
 }
+
+/* Add styles for circular profile picture and centering 'About me' */
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-me {
+  text-align: center;
+}
