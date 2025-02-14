@@ -6,9 +6,10 @@ body {
 }
 
 header {
-  background: #333;
-  color: #fff;
+  background: #fff;
+  color: #333;
   padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
 }
 
 nav ul {
@@ -35,10 +36,11 @@ section {
 }
 
 footer {
-  background: #333;
-  color: #fff;
+  background: #fff;
+  color: #333;
   text-align: center;
   padding: 1rem 0;
+  border-top: 1px solid #ddd;
   position: fixed;
   width: 100%;
   bottom: 0;
