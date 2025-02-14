@@ -44,6 +44,12 @@ footer {
   bottom: 0;
 }
 
+.social-links img {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+}
+
 @media (max-width: 600px) {
   nav ul li {
     display: block;
