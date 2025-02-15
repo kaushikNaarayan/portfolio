@@ -91,3 +91,81 @@ footer {
   height: 24px;
   margin: 0 5px;
 }
+
+#about h2 {
+  text-align: center;
+}
+
+/* Collapsible section styles */
+.collapsible {
+  background-color: #f9f9f9;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Timeline section styles */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left; /* Align the timeline to the left */
+}
+.timeline-item {
+  padding: 10px 20px; /* Narrow the text box */
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+  text-align: left;
+}
+.timeline-year {
+  padding: 0px;
+  background: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 0; /* Added to reduce the gap */
+  margin-right: 0px; /* Added to bring the title closer */
+}
+.timeline-content {
+  padding: 0px;
+  background: none;
+  position: relative;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-left: 30px; /* Adjusted to bring the title closer */
+  margin-top: 0px; /* Added to reduce the gap */
+}
+.timeline-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #9d9d9d;
+  top: 0;
+  bottom: 0;
+  left: 0; /* Align the line to the left */
+  margin-left: 0; /* Remove margin to align the line to the left */
+}
