@@ -72,12 +72,18 @@ footer {
 }
 
 .profile-picture img {
-  width: 100%;
-  height: 100%;
+  width: 500%;
+  height: 500%;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .about-me {
   text-align: center;
+}
+
+.icon-small {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
 }
