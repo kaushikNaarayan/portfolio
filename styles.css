@@ -4,13 +4,16 @@ body {
   padding: 0;
   line-height: 1.6;
   color: #000;
+  font-size: 12pt;
 }
 
 header {
   background: #fff;
   color: #000;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 0 20px;
   border-bottom: 1px solid #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 nav ul {
@@ -30,6 +33,8 @@ nav ul li a {
 
 main {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section {
@@ -40,11 +45,13 @@ footer {
   background: #fff;
   color: #000;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0 20px;
   border-top: 1px solid #ddd;
   position: fixed;
   width: 100%;
   bottom: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .social-links img {
@@ -58,24 +65,60 @@ footer {
     display: block;
     margin-bottom: 1rem;
   }
+  .container {
+    padding: 0 40px;
+  }
 }
 
-/* Add styles for circular profile picture and centering 'About me' */
+@media (orientation: landscape) {
+  .container {
+    padding: 0 40px;
+  }
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (orientation: portrait) {
+  .container {
+    padding: 0 20px;
+  }
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 .profile-picture {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 20px;
   overflow: hidden;
   display: block;
   margin: 0 auto;
 }
 
 .profile-picture img {
-  width: 500%;
-  height: 500%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20px;
+  transform: rotate(-5deg);
+  border: 2px solid #000;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  margin: 0;
+  padding: 0;
 }
 
 .about-me {
@@ -96,7 +139,6 @@ footer {
   text-align: center;
 }
 
-/* Collapsible section styles */
 .collapsible {
   background-color: #f9f9f9;
   color: #444;
@@ -118,54 +160,117 @@ footer {
   background-color: #f1f1f1;
 }
 
-/* Timeline section styles */
-.timeline {
-  position: relative;
-  max-width: 800px;
+.timeline, .timeline-item, .timeline-year, .timeline-content {
+  display: none;
+}
+
+.container {
+  max-width: 100%;
   margin: 0 auto;
-  text-align: left; /* Align the timeline to the left */
+  padding: 0 20px;
 }
-.timeline-item {
-  padding: 10px 20px; /* Narrow the text box */
-  position: relative;
-  background-color: inherit;
-  width: 100%;
-  text-align: left;
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 1200px;
+  }
 }
-.timeline-year {
-  padding: 0px;
-  background: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  text-align: left;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 4px;
-  margin-bottom: 0; /* Added to reduce the gap */
-  margin-right: 0px; /* Added to bring the title closer */
+
+.experience-item {
+  margin-bottom: 2rem;
 }
-.timeline-content {
-  padding: 0px;
-  background: none;
-  position: relative;
-  border-radius: 6px;
-  font-size: 16px;
-  margin-left: 30px; /* Adjusted to bring the title closer */
-  margin-top: 0px; /* Added to reduce the gap */
+
+.experience-year {
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: -0.5rem;
 }
-.timeline-content h3 {
-  font-size: 18px;
-  font-weight: bold;
+
+.experience-organization {
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: -0.5rem;
 }
-.timeline::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: #9d9d9d;
-  top: 0;
-  bottom: 0;
-  left: 0; /* Align the line to the left */
-  margin-left: 0; /* Remove margin to align the line to the left */
+
+.experience-item h3 {
+  margin-bottom: 20px; /* Set bottom margin to 20px */
+  font-size: 18pt;
+  color: #000;
+}
+
+.experience-designation {
+  font-size: 20pt;
+  color: #000;
+  margin-bottom: 0.2rem;
+}
+
+.experience-organization {
+  font-size: 14pt;
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+
+.experience-description {
+  font-size: 12pt;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.experience-item h4 {
+  margin-top: -0.2rem; /* Reduce the space between job title and organization for all jobs */
+}
+
+.experience-item .real-estate {
+  display: block;
+  font-size: 14pt;
+  color: gray;
+  margin-top: -0.5rem;
+}
+
+.experience-item .school {
+  display: block;
+  font-size: 14pt;
+  color: gray;
+  margin-top: -0.5rem;
+}
+
+.experience-item .graduate {
+  display: block;
+  font-size: 14pt;
+  color: gray;
+  margin-top: -0.5rem;
+}
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  font-size: 16pt;
+}
+
+a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.experience-year {
+  color: gray;
+}
+
+.tv-monitor {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

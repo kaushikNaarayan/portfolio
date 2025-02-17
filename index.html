@@ -5,9 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaushik Naarayan</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .experience-item h3 {
+      font-size: x-large;
+      color: lightblack;
+    }
+    .experience-item h4 {
+      font-size: medium;
+      color: grey;
+      margin-top: 0;
+    }
+    .experience-item p {
+      font-size: medium;
+      color: lightblack;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="container">
     <nav>
       <div class="sidecar"></div>
         <a href="https://github.com/kaushikNaarayan" id="github-link" target="_blank"><img src="/assets/github-icon.svg" alt="GitHub" class="icon-small"></a>
@@ -17,76 +32,60 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <section id="about">
       <h2>Hi, I'm Kaushik!</h2>
-      <img src="/assets/profile.jpg" alt="Kaushik Naarayan" class="profile-picture">
+      <div class="profile-picture">
+        <img src="/assets/profile.jpg" alt="Kaushik Naarayan" class="tv-monitor">
+      </div>
       <p>Hi, I’m Kaushik! Over the past decade, I’ve worked across finance, tech, and product management at Goldman Sachs, JPMorgan, and Airtel Digital. My journey’s been all about exploring data, AI/ML, and building products that matter. Now, I’m diving into something new in stealth mode, blending tech and creativity to build cool stuff. This site is where I share my thoughts, projects, and everything I’m learning along the way.</p>
     </section>
-    <button class="collapsible">My Journey</button>
-    <div class="content">
-      <section id="timeline">
-        <h2>My Journey</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-year">2025</div>
-            <div class="timeline-content">
-              <h3>Founder, Building Material Lab</h3>
-              <p>Focusing on computer vision, graphics, and innovative digital experiences.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2023</div>
-            <div class="timeline-content">
-              <h3>Principal Product Manager at Airtel Digital</h3>
-              <p>Led content economics, data strategies, and large-scale product initiatives.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2021</div>
-            <div class="timeline-content">
-              <h3>Senior Product Manager at Airtel Digital</h3>
-              <p>Drove product strategy, user growth, and data-centric product innovations.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2020</div>
-            <div class="timeline-content">
-              <h3>Data Engineering and AI/ML for Equity Research at JPMorgan Chase</h3>
-              <p>Leveraged data pipelines, machine learning models, and analytical tools for financial research.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2018</div>
-            <div class="timeline-content">
-              <h3>Associate (Real Estate Private Equity) at Goldman Sachs</h3>
-              <p>Managed real estate portfolios, financial modeling, and investment analysis.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2016</div>
-            <div class="timeline-content">
-              <h3>Data Analyst at Goldman Sachs</h3>
-              <p>Focused on US mortgages, structured products, and data-driven financial analysis.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2015</div>
-            <div class="timeline-content">
-              <h3>Product Marketing at Varthana</h3>
-              <p>Contributed to marketing strategies, product positioning, and market research in the education finance sector.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2014</div>
-            <div class="timeline-content">
-              <h3>Graduated from the School of Planning and Architecture, New Delhi</h3>
-              <p>Built a strong foundation in design, problem-solving, and project execution.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Founder</h3>
+        <h4>Material Lab, 2025</h4>
+        <p>Focusing on computer vision, graphics, and innovative digital experiences.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Principal Product Manager</h3>
+        <h4>Airtel Digital, 2023</h4>
+        <p>Led content economics, data strategies, and large-scale product initiatives.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Senior Product Manager</h3>
+        <h4>Airtel Digital, 2021</h4>
+        <p>Drove product strategy, user growth, and data-centric product innovations.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Data Engineering</h3>
+        <h4>AI/ML for Equity Research</h4>
+        <h4>JPMorgan Chase, 2020</h4>
+        <p>Leveraged data pipelines, machine learning models, and analytical tools for financial research.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Associate</h3>
+        <h4>Real Estate Private Equity</h4>
+        <h4>Goldman Sachs, 2018</h4>
+        <p>Managed real estate portfolios, financial modeling, and investment analysis.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Data Analyst</h3>
+        <h4>Goldman Sachs, 2016</h4>
+        <p>Focused on US mortgages, structured products, and data-driven financial analysis.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Product Marketing</h3>
+        <h4>Varthana, 2015</h4>
+        <p>Contributed to marketing strategies, product positioning, and market research in the education finance sector.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Graduate</h3>
+        <h4>School of Planning and Architecture</h4>
+        <h4>New Delhi, 2014</h4>
+        <p>Built a strong foundation in design, problem-solving, and project execution.</p>
+      </div>
+    </section>
     <button class="collapsible">Projects</button>
     <div class="content">
       <section id="projects">
@@ -102,6 +101,9 @@
       </section>
     </div>
   </main>
+  <footer class="container">
+    <p>&copy; 2023 Kaushik Naarayan. All rights reserved.</p>
+  </footer>
   <script src="scripts.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
