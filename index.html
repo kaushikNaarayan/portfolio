@@ -5,98 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaushik Naarayan</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .experience-item h3 {
-      font-size: x-large;
-      color: lightblack;
-    }
-    .experience-item h4 {
-      font-size: medium;
-      color: grey;
-      margin-top: 0;
-    }
-    .experience-item p {
-      font-size: medium;
-      color: lightblack;
-    }
-  </style>
 </head>
 <body>
   <header class="container">
     <nav>
       <div class="sidecar"></div>
+    </nav>
+  </header>
+  <main class="container">
+    <section id="about">
+      <div class="profile-picture">
+        <img src="/assets/profile.jpg" alt="Kaushik Naarayan" class="tv-monitor">
+      </div>
+      <h2>Kaushik Naarayan</h2>
+      <p>👋 I make games, write code, and love math 🚀</p>
+      <div class="urls">
         <a href="https://github.com/kaushikNaarayan" id="github-link" target="_blank"><img src="/assets/github-icon.svg" alt="GitHub" class="icon-small"></a>
         <a href="https://www.linkedin.com/in/kaushik-naarayan-409b5213/" id="linkedin-link" target="_blank"><img src="/assets/linkedin-icon.svg" alt="LinkedIn" class="icon-small"></a>
         <a href="https://x.com/kaushiknaarayan" id="twitter-link" target="_blank"><img src="/assets/twitter-icon.svg" alt="Twitter" class="icon-small"></a>
         <a href="https://materiallab.io/" id="company-link" target="_blank"><img src="/assets/company-icon.svg" alt="Company" class="icon-small"></a>
       </div>
-    </nav>
-  </header>
-  <main class="container">
-    <section id="about">
-      <h2>Hi, I'm Kaushik!</h2>
-      <div class="profile-picture">
-        <img src="/assets/profile.jpg" alt="Kaushik Naarayan" class="tv-monitor">
-      </div>
-      <p>Hi, I’m Kaushik! Over the past decade, I’ve worked across finance, tech, and product management at Goldman Sachs, JPMorgan, and Airtel Digital. My journey’s been all about exploring data, AI/ML, and building products that matter. Now, I’m diving into something new in stealth mode, blending tech and creativity to build cool stuff. This site is where I share my thoughts, projects, and everything I’m learning along the way.</p>
     </section>
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>Founder</h3>
-        <h4>Material Lab, 2025</h4>
-        <p>Focusing on computer vision, graphics, and innovative digital experiences.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Principal Product Manager</h3>
-        <h4>Airtel Digital, 2023</h4>
-        <p>Led content economics, data strategies, and large-scale product initiatives.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Senior Product Manager</h3>
-        <h4>Airtel Digital, 2021</h4>
-        <p>Drove product strategy, user growth, and data-centric product innovations.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Data Engineering</h3>
-        <h4>AI/ML for Equity Research</h4>
-        <h4>JPMorgan Chase, 2020</h4>
-        <p>Leveraged data pipelines, machine learning models, and analytical tools for financial research.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Associate</h3>
-        <h4>Real Estate Private Equity</h4>
-        <h4>Goldman Sachs, 2018</h4>
-        <p>Managed real estate portfolios, financial modeling, and investment analysis.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Data Analyst</h3>
-        <h4>Goldman Sachs, 2016</h4>
-        <p>Focused on US mortgages, structured products, and data-driven financial analysis.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Product Marketing</h3>
-        <h4>Varthana, 2015</h4>
-        <p>Contributed to marketing strategies, product positioning, and market research in the education finance sector.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Graduate</h3>
-        <h4>School of Planning and Architecture</h4>
-        <h4>New Delhi, 2014</h4>
-        <p>Built a strong foundation in design, problem-solving, and project execution.</p>
-      </div>
-    </section>
+    <button class="collapsible">Experience</button>
+    
+    <div class="content">
+      <section id="experience">        
+        <div class="experience-item">
+          <h3>Founder, Material Lab 2025</h3>
+          <p>Focusing on computer vision, graphics, and innovative digital experiences.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Principal Product Manager, Airtel Digital 2023</h3>
+          <p>Led content economics, data strategies, and large-scale product initiatives.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Senior Product Manager, Airtel Digital 2021</h3>
+          <p>Drove product strategy, user growth, and data-centric product innovations.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Data Engineering, AI/ML for Equity Research JPMorgan Chase 2020</h3>
+          <p>Leveraged data pipelines, machine learning models, and analytical tools for financial research.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Associate, Real Estate Private Equity Goldman Sachs 2018</h3>
+          <p>Managed real estate portfolios, financial modeling, and investment analysis.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Data Analyst, Goldman Sachs 2016</h3>
+          <p>Focused on US mortgages, structured products, and data-driven financial analysis.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Product Marketing, Varthana 2015</h3>
+          <p>Contributed to marketing strategies, product positioning, and market research in the education finance sector.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Graduate, School of Planning and Architecture New Delhi 2014</h3>
+          <p>Built a strong foundation in design, problem-solving, and project execution.</p>
+        </div>
+      </section>
+    </div>
     <button class="collapsible">Projects</button>
     <div class="content">
-      <section id="projects">
-        <h2>Projects</h2>
+      <section id="projects">        
         <p>Details about your projects will go here.</p>
       </section>
     </div>
     <button class="collapsible">What I'm Reading</button>
     <div class="content">
       <section id="reading">
-        <h2>What I'm Reading</h2>
         <p>Welcome to my weekly blog distillation where I cover what I've been reading. Stay tuned for updates!</p>
       </section>
     </div>
@@ -105,21 +81,5 @@
     <p>&copy; 2023 Kaushik Naarayan. All rights reserved.</p>
   </footer>
   <script src="scripts.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var coll = document.getElementsByClassName('collapsible');
-      for (var i = 0; i < coll.length; i++) {
-        coll[i].addEventListener('click', function() {
-          this.classList.toggle('active');
-          var content = this.nextElementSibling;
-          if (content.style.display === 'block') {
-            content.style.display = 'none';
-          } else {
-            content.style.display = 'block';
-          }
-        });
-      }
-    });
-  </script>
 </body>
 </html>
